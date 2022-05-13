@@ -38,7 +38,7 @@ You can also enable "Allow multiple instances" so you can play multiplayer on on
 
 You should only have to do this once to get the activities into the server as they are stored in the database after importing.
 
-If launching a game still doesn't work, try deleting quizzz.mv and other .db files from the project folder.
+If launching a game still doesn't work, try deleting quizzz.mv and other .db files from the project folder and reimporting the activity bank (step 8).
 
 ## How to contribute to it
 
