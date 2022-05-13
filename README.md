@@ -20,12 +20,21 @@ group members. Add your own name (do not add the names for others!) to the secti
 ## How to run it
 
 You should download the game. You should have a stable internet connection in order for the game to work properly.
+The game doesn't look that well on smaller screen sizes (like most macbooks) so a resolution of atleast 1920 x 1080 is recommended.
 
 In order for the game to work you should also download the folder containing the activities in the following way:
 
+If there is already an activities folder in the project folder you can skip steps 1 and 2
 1. Go to https://gitlab.ewi.tudelft.nl/cse1105/2021-2022/activity-bank/-/releases
-2. Get the zip folder containing activities and the activities.json file.
-3. Now in the application go to the admin panel and import the activities from this activities.json file, make sure you check override database.
+2. Get the zip folder containing activities and the activities.json file, unzip it and move it to the project file.
+3. Open the project in an IDE (we use IntelliJ IDEA)
+4. Make sure you have javaFX downloaded
+5. Edit the run configuration of the following file: client/src/main/java/client/Main.java by adding the path to the JavaFX runtime folder as a paramater, it is also recommended to rename the comfiguration to something like "Client". This is what the configuration should look like:
+![image](https://user-images.githubusercontent.com/97608160/168282222-cf73e078-aae2-42fe-b735-722f2e07f97a.png)
+You can also enable "Allow multiple instances" so you can play multiplayer on one device.
+6. Now run the following file to start the server: server/src/main/java/server/Main.java
+7. If you then run the file mentioned in step 5, the application should launch.
+8. Now you can import the activity bank (the activities.json file from step 2) from the admin panel. The game should be playable now.
 
 You should only have to do this once to get the activities into the server as they are stored in the database after importing.
 
