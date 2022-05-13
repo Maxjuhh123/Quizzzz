@@ -1,0 +1,35 @@
+/*Entire table*/
+.table-view {
+    -fx-background-color: transparent;
+    -fx-table-border-color: transparent;
+}
+
+/*Single cells*/
+.table-row-cell{
+    -fx-background-color:  transparent;
+    -fx-table-cell-border-color: transparent;
+    -fx-cell-size: 32px;
+}
+
+/*Making header transparent*/
+.table-view .column-header-background{
+    -fx-background-color: transparent;
+}
+.table-view .column-header {
+    -fx-background-color: transparent;
+    -fx-pref-height: 0px;
+}
+.table-view .column-header-background .filler {
+    -fx-background-color: transparent;
+}
+
+/*Making scroll bars invisible*/
+.table-view .scroll-bar * {
+    -fx-min-width: 0;
+    -fx-pref-width: 0;
+    -fx-max-width: 0;
+
+    -fx-min-height: 0;
+    -fx-pref-height: 0;
+    -fx-max-height: 0;
+}
